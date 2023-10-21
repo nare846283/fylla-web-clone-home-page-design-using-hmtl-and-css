@@ -1,0 +1,1066 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #fdfbf5;
+    color: #191919;
+}
+
+main{
+    width: 98%;
+    height: auto;
+    border: 1px solid black;
+    margin: 20px auto;
+}
+
+header{
+    width: 90%;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+
+header .logo{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+header ul{
+    width: fit-content;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+.link-text{
+    margin-left: 20px;
+}
+
+.link-text i{
+    margin-left: 10px;
+}
+
+header ul li a{
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 0px;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+}
+
+header ul li a button{
+    width: 150px;
+    height: 36px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+header ul li a button:hover::after{
+    cursor: pointer;
+    transform: translateY(-72%);
+    transition: all ease-in .5s;
+}
+
+header ul li a button:hover h4{
+    cursor: pointer;
+    transform: translateY(-134%);
+    transition: all ease-in .5s;
+}
+
+.break-line{
+    width: 1px;
+    height: 40px;
+    background-color: black;
+    margin-left: 0px;
+    margin-left: 10px;
+}
+
+header ul li a button::after{
+    position: absolute;
+    content: "let's talk";
+    width: 150px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.circle{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+
+.circle:hover a{
+    color: white;
+    background-color: black;
+}
+
+.circle a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 11px;
+}
+
+
+section{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 70px;
+}
+
+section .break-line{
+    margin-top: 0px;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+}
+
+.banner-section{
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-section .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.banner-section .left h1{
+    font-family: Syne,sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 100%;
+    width: 100%;
+}
+
+.banner-section .left p{
+    margin-top: 20px;
+    /* margin-bottom: 100px; */
+    font-size: 1.75rem;
+    line-height: 150%;
+    width: 90%;
+}
+
+.banner-section .left img{
+    display: flex;
+    align-items: end;
+    margin-top: 130px;
+}
+
+.banner-section .right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.banner-section .right video{
+    width: 90%;
+    height: 96%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.clients-section{
+    width: 100%;
+    height: 30vh;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-section .left{
+    width: 180px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-right: 1px solid #000;
+}
+
+.clients-section .left h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto Mono,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.clients-section .right{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-section .right img{
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.what-section{
+    width: 100%;
+    height: 80vh;
+    /* background-color: red; */
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.what-section .left{
+    width: 34%;
+    height: 90%;
+    border-right: 1px solid #000;
+}
+
+.what-section .left h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto Mono,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.what-section .right{
+    width: 62%;
+    height: 100%;
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.what-section .right .break-line{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin-top: 0px;
+}
+
+.what-section .right .first{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    height: 44%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto Mono,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.what-section .right .first .break-line{
+    width: 1px;
+    height: 80%;
+    background-color: #000000;
+    margin-top: 0px;
+}
+
+
+.card{
+    width: 46%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.card .card-content{
+    margin-left: 40px;
+}
+
+.card .card-content h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: Syne,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+
+.card .card-content p{
+    font-family: Satoshi,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 170%;
+    width: fit-content;
+}
+
+.featured-section .left{
+    width: 34%;
+    height: 100vh;
+}
+
+.featured-section .left h1{
+    font-family: Syne,sans-serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 100%;
+    width: 96%;
+}
+
+.featured-section .left p{
+    font-family: Satoshi,sans-serif;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    font-size: 1.75rem;
+    line-height: 150%;
+    width: 80%;
+    text-align: justify;
+}
+
+.featured-section .left button{
+    width: 150px;
+    height: 36px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.featured-section .left button:hover::after{
+    cursor: pointer;
+    transform: translateY(-72%);
+    transition: all ease-in .5s;
+}
+
+.featured-section .left button:hover h4{
+    cursor: pointer;
+    transform: translateY(-150%);
+    transition: all ease-in .5s;
+}
+
+.featured-section .left button::after{
+    position: absolute;
+    content: "see all work";
+    width: 150px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.featured-section{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.featured-section .right{
+    width: 62%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.featured-section .right .break-line{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin-top: 0px;
+    margin-bottom: 70px;
+}
+
+.featured-section .right .first{
+   margin-bottom: 50px;
+
+}
+
+.featured-section .right .first .card:first-child{
+    position: relative;
+}
+
+.featured-section .right .first .card:first-child:after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 37vh;
+    background: #000;
+    margin-left: 112%;
+}
+
+.featured-section .right .right-img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+}
+
+.featured-section .right .right-img img{
+    border-radius: 20px;
+    margin-bottom: 0px;
+}
+
+.featured-section .right .right-img .img-desc{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.featured-section .right .right-img .img-desc h4{
+    display: flex;
+    justify-content: space-between;
+    font-family: Syne,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.featured-section .right .right-img .img-desc p{
+    font-family: Satoshi,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 170%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.featured-section .right .card{
+    width: 44%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.featured-section .right .card .card-img{
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.featured-section .right .card .card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.featured-section .right .card .img-desc{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.featured-section .right .card .img-desc h4{
+    font-family: Syne,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+.featured-section .right .card .img-desc p{
+    font-family: Satoshi,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 170%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.how-work-section{
+    width: 100%;
+    height: 90vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.how-work-section .break-line{
+    width: 1px;
+    height: 90vh;
+    
+}
+
+.how-work-section .left{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.how-work-section .left img{
+    width: 100px;
+    height: 100px;
+    margin-top: 20%;
+}
+
+.how-work-section .left h5{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto Mono,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.how-work-section .left h2{
+    font-family: Syne,sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 100%;
+    margin-top: 20px;
+}
+
+.how-work-section .right{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.how-work-section .right p{
+    font-family: Satoshi,sans-serif;
+    font-size: 1.75rem;
+    line-height: 150%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.how-work-section .right button{
+    width: 150px;
+    height: 36px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.how-work-section .right button:hover::after{
+    cursor: pointer;
+    transform: translateY(-72%);
+    transition: all ease-in .5s;
+}
+
+.how-work-section .right button:hover h4{
+    cursor: pointer;
+    transform: translateY(-150%);
+    transition: all ease-in .5s;
+}
+
+.how-work-section .right button::after{
+    position: absolute;
+    content: "our services";
+    width: 150px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.our-section{
+    width: 100%;
+    height: 34vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#latest{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-section h2{
+    font-family: Syne,sans-serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    line-height: 110%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.our-section button{
+    width: 100px;
+    height: 36px;
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+.our-section button:hover::after{
+    cursor: pointer;
+    transform: translateY(-72%);
+    transition: all ease-in .5s;
+}
+
+.our-section button:hover h4{
+    cursor: pointer;
+    transform: translateY(-150%);
+    transition: all ease-in .5s;
+}
+
+.our-section button::after{
+    position: absolute;
+    content: "see all";
+    width: 100px;
+    height: 36px;
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.vision-section{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.vision-section .left{
+    width: 44%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.vision-section .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.vision-section .break-line{
+    width: 1px;
+    height: 100%;
+    margin: auto;
+    background-color: #000000;
+}
+
+.vision-section .right{
+    width: 46%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.vision-section .right .content-card{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.vision-section .right .content-card .s-no{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #191919;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    display: flex;
+    font-family: Syne,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.vision-section .right .content-card .content{
+    width: 90%;
+
+}
+
+.vision-section .right .content-card .content h3{
+    font-family: Syne,sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.vision-section .right .content-card .content p{
+    margin-top: 14px;
+    font-family: Syne,sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: justify;
+}
+
+.vision-section .right .break-line{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    margin-bottom: 50px;
+}
+
+
+.branding-section{
+    width: 100%;
+    height: 55vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.branding-section .barnding-card{
+    width: 28%;
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    
+}
+
+.branding-section .barnding-card .branding-img{
+    width: 100%;
+    height: 56%;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-top: 25px;
+}
+
+.branding-section .barnding-card .branding-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.branding-section .barnding-card h5{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto Mono,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 10px;
+}
+
+.branding-section .barnding-card h2{
+    font-family: Syne,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 130%;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.branding-section .break-line{
+    width: 1px;
+    height: 100%;
+    background-color: #000000;
+}
+
+footer{
+    width: 100%;
+    height: 45vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .break-line{
+    width: 1px;
+    height: 100%;
+    }
+
+footer .left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .left .left-content{
+    width: 45%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .left .left-content p{
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+footer .left ul{
+    width: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+footer .left ul li{
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+footer .left ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family: serif;
+}
+
+footer .right{
+    width: 64%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer .right h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 130%;
+    color: #191919;
+    width: 100%;
+    margin-left: 0px;
+}
+
+footer .right .ft-links{
+    width: 30%;
+}
+
+footer .right ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+footer .right ul li{
+    list-style-type: none;
+    margin-left: 0px;
+}
+
+footer .right ul li a{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: Roboto Mono,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #191919;
+}
+
+footer .right ul li a:hover{
+    text-decoration: underline;
+}
+
+footer ul li a button{
+    width: 180px;
+    height: 36px;
+    margin-left: 0px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+footer ul li a button:hover::after{
+    cursor: pointer;
+    transform: translateY(-72%);
+    transition: all ease-in .3s;
+}
+
+footer ul li a button:hover h4{
+    cursor: pointer;
+    transform: translateY(-140%);
+    transition: all ease-in .3s;
+}
+
+footer ul li a button::after{
+    position: absolute;
+    content: "more templates";
+    width: 180px;
+    height: 36px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
